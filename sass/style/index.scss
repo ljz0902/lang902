@@ -1,0 +1,10 @@
+$color:#ff00ff;
+#div{
+    color:$color1;
+    .pl{
+        border: 1px solid black;
+    }
+}
+#div2{
+    background-color: $color;
+}

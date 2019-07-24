@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name=Symbol();
+        // name="小b"
+        let obj={
+            name:"小a",
+            age:"12",
+            // [name]:"小b"
+        }
+        console.log(obj[name]);
+
+        for(let item in obj){
+            console.log(item);
+        }
+        
+    </script>
+</body>
+</html>

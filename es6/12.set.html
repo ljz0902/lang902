@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let arr2=[1,2,3,4,5,4,3,2,4]
+
+        // let arr3=new Set(arr2);
+        // console.log( Array.from(arr3));
+        
+
+
+        // let arr3=[]
+        // for(let i=0;i<arr2.length;i++){
+        //     if(!arr3.includes(arr2[i])){
+        //         arr3.push(arr2[i])
+        //     }
+        // }
+        // console.log(arr3);
+        
+
+        // let arr=new Set(arr2);
+        // // arr.delete(2)
+        // // arr.add(1)
+        // arr.add(2)
+        // // arr.add(5)
+        // console.log(arr);
+        
+
+        // let arr2=[1,2,3,4,5]
+
+        // let arr3=new Set(arr2);
+        // arr3.clear();
+        // console.log(arr3);
+        
+
+        // let arr2=["1","2","3","4","5"]
+
+        // let arr3=new Set(arr2);
+
+        // for(let [item,index] of arr3.entries()){
+        //     console.log(item,index);
+            
+        // }
+
+        let ws=new WeakSet();
+        let obj={
+            name:"333"
+        }
+        ws.add(obj);
+        ws.add(obj);
+        console.log(ws);
+        
+    </script>
+</body>
+</html>

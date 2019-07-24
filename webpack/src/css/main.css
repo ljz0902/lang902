@@ -1,0 +1,9 @@
+h1{
+    font-size: 50px;
+    color: blue;
+}
+.div1{
+    width: 300px;
+    height: 300p;
+    background-image: url('../image/slider3.jpg')
+}

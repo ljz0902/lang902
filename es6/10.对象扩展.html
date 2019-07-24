@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var name ="小a"
+        // var age ="12"
+        // var str="school"
+        // var obj={
+        //     name,
+        //     age
+        // }
+        // var obj2={
+        //     [str]:"aaa"
+        // }
+        // console.log(obj);
+
+
+        // var obj ={
+        //     name:"小明",
+        //     age:"12",
+        //     sex:"男",
+        //     para:"xxx"
+        // }
+        // function foo(para){
+        //     return obj[para]
+        // }
+        // console.log(foo("age"));
+        
+
+        // var name="小明"
+        // var obj={
+        //     name,
+        //     showName:function(){
+        //         console.log(this.name);
+        //     }
+        // }
+        // obj.showName();
+
+
+        // console.log(Object.is(1,1));
+        
+
+        // let obj={
+        //     name:1
+        // }
+        // let obj2=obj
+        // console.log(Object.is(obj2,obj));
+
+        // console.log(NaN==NaN);
+        // console.log(0===0);
+        // console.log(Object.is(NaN,NaN));
+        // console.log(Object.is(0,-0));
+
+        // let obj={
+        //     name:"小明"
+        // }
+        // let obj2={
+        //     name:"小a",
+        //     age:20,
+        //     school:"heida",
+        //     parent:{
+        //         father:"bbb"
+        //     }
+        // }
+
+        // Object.assign(obj,obj2)
+        // obj2.parent.father="ccccc"
+        // console.log(obj);
+        
+        
+        // let obj={
+        //     name:0
+        // }
+        // if(obj.name){
+        //     console.log("有该属性"); 
+        // }
+
+        // console.log(obj.hasOwnProperty('name'));
+        
+
+        // console.log("name"in obj);
+        // if("name"in obj){
+        //     console.log("有该属性");
+        // }
+
+        // function Person(){
+        //     this,name="小明"
+        // }
+        // Person.prototype.age=12
+        // let student1=new Person()
+        // console.log(student1.age);
+        
+        // // console.log(student1.name);
+        // console.log("age" in student1);
+        // console.log(student1.hasOwnProperty("age"));
+        
+        
+        // var arr=[1,3,0,5,6,7]
+        // console.log(10 in arr);
+        
+        let obj={
+            name:"小a",
+            age:"20",
+            school:"heida"
+        }
+        delete obj.school;
+        console.log(obj);
+        
+    </script>
+</body>
+</html>

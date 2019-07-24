@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nowDate = new Date();
+        nowDate.setDate(nowDate.getDate()-1)
+        document.cookie = 'fellow=32'
+        document.cookie = "test32=32;expires="+nowDate.toUTCString()
+        console.log(document.cookie);
+        
+        setCookie('fellow',"32",1);
+        getCookie("fellow")//32
+        delCookie("fellow")
+
+        function setCookie(name,val,time){
+            var nowDate=new Date();
+            nowDate.setDate(nowDate.getDate()+parseInt(time));
+            document.cookie=name+"="+val+";expires"+nowDate.toUTCString
+        }
+    </script>
+</body>
+</html>

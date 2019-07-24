@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+        }
+        .active{
+        color: red;
+        }
+    </style>
+</head>
+    <ul id="box">
+        <li mysrc="hello" class="li1" id="list">百度</li>
+        <li mysrc="hello" class="li2" id="list2">淘宝</li>
+        <li mysrc="hello" class="li3" id="list3">天猫</li>
+    </ul>
+    <script>
+        var aList = document.getElementById("list"); 
+        aList.onclick = function(){
+            aList.className = "li1 active";
+            location.replace("http://www.baidu.com")
+        }
+        var aList = document.getElementById("list2"); 
+        aList.onclick = function(){
+            aList.className = "li2 active";
+            location.replace("http://www.taobao.com")
+        }
+        var aList = document.getElementById("list3"); 
+        aList.onclick = function(){
+            aList.className = "li3 active";
+            location.replace("http://www.tmall.com")
+        } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // var arr=new Array();
+        // // arr.push()
+        // // 构造继承
+        // function Person(){
+        //     this.name="小明"
+        //     this.age=20
+        //     // this.shouName=function(){
+        //     //     console.log(this.name);
+        //     // }
+        // }
+        // Person.prototype.shouName=function(){
+        //     console.log(this.name);
+        // }
+        // // let person1=new Person();
+        // // console.log(person1.name);
+        
+        // function Student(){
+        //     Person.call(this)
+        //     this.school="黑大"
+        // }
+        // let Student1=new Student();
+        // // console.log(student1.name);
+        // student1.shouName()
+        
+        //// // 原型继承
+        function Person(){
+            this.name="小明"
+            this.age=20
+        }
+        Person.prototype.shouName=function(){
+            console.log(this.name);
+        }
+        function Student(){
+            this.school="黑大"
+        }
+        Student.prototype=new Person();
+        let student1=new Person();
+        let student2=new Person();
+        console.log(student2.name=121);
+        
+        student2.name="小a"
+    </script>
+</body>
+</html>
