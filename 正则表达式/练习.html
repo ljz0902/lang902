@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let str = "0451-12345678-1234"
+        // let reg = /^\d{3,4}-\d{7,8}(-\d{3,4})?$/
+
+        // console.log(reg.test(str));
+        
+
+
+
+
+
+
+        // let str="013015011111"
+        // let reg=/^0*(13|15)\d{9}$/
+
+        // console.log(reg.test(str));
+
+
+
+
+
+
+        // let str="12345a_6789"
+        // let reg=/\d[0-9]|\w[a-zA-z]|[_]\d{11}$/
+        // let reg=
+
+        // console.log(reg.test(str));
+        
+        // let str="2019-07-25"
+        // let reg=/^\d{4}-\d{2}-\d{2}$/
+        // console.log(reg.test(str));
+        
+
+
+
+
+
+        let reg = /(?<year>\d{4})-(?<date>\d{2})-(?<month>\d{2})/
+        let str = "2018-15-08"
+        console.log(reg.exec(str));
+        let a = str.replace(reg,"$1年$3月$2日")
+        console.log(a);
+
+
+
+
+        
+    </script>
+</body>
+
+</html>
