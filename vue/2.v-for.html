@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- <ul>
+            <li v-for=" (val,index) in arr">{{val}}---{{index}}</li>
+        </ul>
+        <ul>
+            <li v-for="(val,name,index) in obj">{{val}}--{{name}}--{{index}}</li>
+        </ul> -->
+        <ul>
+            <li v-for="(val,index) in student">
+                姓名:{{val.name}}  年龄:{{val.age}}  学校:{{val.school}}
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                arr:[1,2,3,4],
+                obj:{
+                    name:"xiao a",
+                    age:"21",
+                    school:"heida"
+                },
+                student:[
+                    {
+                        name:"小a",
+                        age:"20",
+                        school:"heida"
+                    },
+                    {
+                        name:"小b",
+                        age:"21",
+                        school:"heida"
+                    },
+                    {
+                        name:"小c",
+                        age:"22",
+                        school:"heida"
+                    },                    
+                    {
+                        name:"小d",
+                        age:"23",
+                        school:"heida"
+                    }
+                ]
+            }
+        })
+    </script>
+</body>
+</html>

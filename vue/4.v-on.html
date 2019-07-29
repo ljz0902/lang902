@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1 @click="foo3">fellow32</h1>
+        <div v-on:click="foo1(1,$event)">hello
+            <div v-on:click.stop="foo2(2,$event)">world</div>
+        </div>
+        <a href="http://www.baidu.com/" v-on:click.prevent="aevent">baidu.com</a>
+        <button v-on:click="addEvent">add</button>
+        <h1>{{num}}</h1>
+    </div>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                num:0
+            },
+            methods:{
+                addEvent(){
+                    this.num++
+                },
+                foo1(num,e){
+                    console.log(num,e);
+                    
+                    console.log('foo1');
+                    
+                },
+                foo2(num,e){
+                    // e.stopPropagation();
+                    console.log('foo2');
+                    
+                },
+                aevent(e){
+                    // e.stopPropagation();
+                },
+                foo3(num,e){
+                    console.log('foo3');
+                    
+                }
+            }
+        })
+    </script>
+</body>
+</html>
