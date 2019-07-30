@@ -24,8 +24,8 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            margin-left: -200px;
             margin-top: -150px;
+            margin-left: -200px;
         }
 
         .dialog-header {
@@ -41,16 +41,16 @@
 </head>
 
 <body>
-    <div id="#app">
+    <div id="app">
         <button @click="clickHandle(1)">登录</button>
         <button @click="clickHandle(0)">注册</button>
-        <div :is="com" @closedia="colseHandle">
+        <div :is="com" @closedia="closeHandle">
             <span slot="title">{{title}}</span>
             <h1 slot="info">{{info}}</h1>
         </div>
         <!-- <my-dialog>
             <span slot="title">登录</span>
-            <h1 slot="info">D登陆区域</h1>
+            <h1 slot="info">d登录区域</h1>
         </my-dialog> -->
     </div>
     <template id="tem">
@@ -73,15 +73,15 @@
             el: "#app",
             data: {
                 title: "登录",
-                info: "登陆内容",
+                info: "登录内容",
                 com: null
             },
             methods: {
-                colseHandle() {
+                closeHandle() {
                     this.com = null
                 },
                 clickHandle(key) {
-                    this.com = "my-dialog"
+                    this.com = "my-dialog";
                     if (key == 0) {
                         this.title = "注册"
                         this.info = "注册内容"
