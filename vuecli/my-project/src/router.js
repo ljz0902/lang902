@@ -24,7 +24,19 @@ export default new Router({
     {
       path     : '/connect',
       name     : 'connect',
-      component: () => import('./views/Connect.vue')
+      component: () => import('./views/Connect.vue'),
+      children:[
+        {
+          path:"/connect/test1",
+          name:"test1",
+          component: () => import('./views/test1.vue')
+        },
+        {
+          path:"/connect/test2",
+          name:"test2",
+          component: () => import('./views/test2.vue')
+        }
+      ]
     }
   ]
 })
