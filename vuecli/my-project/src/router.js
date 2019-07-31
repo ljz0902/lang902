@@ -46,6 +46,9 @@ export default new Router({
     {
       path:'/mine',
       redirect:'/'
+    },{
+      path:'*',
+      component:()=>import('./views/Error404.vue')
     }
   ]
 })
