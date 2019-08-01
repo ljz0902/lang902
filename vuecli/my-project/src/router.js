@@ -48,6 +48,11 @@ export default new Router({
       ]
     },
     {
+      path:"/test3",
+      name:"test3",
+      component:()=>import("./views/test3.vue")
+    },
+    {
       path:'/mine',
       redirect:'/'
     },{
