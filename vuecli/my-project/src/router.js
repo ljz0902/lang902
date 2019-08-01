@@ -5,7 +5,7 @@ import Home from './views/Home.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode  : 'history',
+  mode  : 'hash',
   base  : process.env.BASE_URL,
   routes: [
     {
@@ -50,7 +50,10 @@ export default new Router({
     {
       path:"/test3",
       name:"test3",
-      component:()=>import("./views/test3.vue")
+      components:{
+        default:()=>import("./views/test3.vue"),
+        view1:()=>import("./views/test2.vue")
+      }
     },
     {
       path:'/mine',

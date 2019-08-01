@@ -1,12 +1,15 @@
 <template>
     <div>
-        <button @click="add(10)">加一</button>
+        <button @click="$store.commit('add',10)">加一</button>
         <button @click="reduce(5)">减一</button>
-        <h1>{{$store.state.count}}</h1>
+        <button @click="addAction(20)">action加一(map)</button>
+        <button @click="$store.dispatch('addAction',100)">action加一(单独)</button>
+        <h1>{{count}}</h1>
+        <h1>{{count2}}</h1>
     </div>
 </template>
 <script>
-import {mapState,mapMutations}from "vuex"
+import {mapState,mapMutations, mapGetters, mapActions}from "vuex"
 export default {
     methods:{
         // addHandle(){
@@ -15,7 +18,8 @@ export default {
         // reduceHandle(){
         //     this.$store.commit('reduce')
         // }
-        ...mapMutations(["add","reduce"])
+        ...mapMutations(["add","reduce"]),
+        ...mapActions(["addAction"])
     },
     // computed:{
     //     count(){
@@ -29,7 +33,8 @@ export default {
     //     ...mapState({count:state=>state.count})
     // },
     computed:{
-        ...mapState(["count"])
+        ...mapState(["count"]),
+        ...mapGetters(["count2"])
     }
 }
 </script>
