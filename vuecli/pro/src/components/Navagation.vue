@@ -6,7 +6,7 @@
     </header>
     <nav>
       <ul>
-        <li @click="clickHandle(item)" v-for="item in navList">{{item.title}}</li>
+        <li @click="clickHandle(item)" v-for="(item,index) in navList" :key="index">{{item.title}}</li>
       </ul>
     </nav>
   </div>

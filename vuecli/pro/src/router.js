@@ -20,10 +20,6 @@ export default new Router({
       name:"book",
       component:()=>import("./views/book/Book.vue")
     },{
-      path:"/movie",
-      name:"movie",
-      component:()=>import("./views/movie/Movie.vue")
-    },{
       path:"/talk",
       name:"talk",
       component:()=>import("./views/talk/Talk.vue")
