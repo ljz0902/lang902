@@ -2,7 +2,7 @@
   <div :class="[activeClass,'nav-container']">
     <header>
       <p>首页</p>
-      <span>电影</span>
+      <span>{{activeTitle}}</span>
     </header>
     <nav>
       <ul>
