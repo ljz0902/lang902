@@ -74,14 +74,12 @@ export default {
 .nav-container header,
 .nav-container nav {
   height: 1rem;
-  background-color: gray;
   width: 100%;
 }
 .nav-container header {
   position: fixed;
   top: 0;
   font-size: 0.8rem;
-  position: relative;
   text-align: center;
 }
 .nav-container header p {
