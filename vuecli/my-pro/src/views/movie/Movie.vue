@@ -76,8 +76,8 @@ export default {
 </script>
 <style scoped>
 .list-item {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+  padding: 30px;
+  border-bottom: 3px solid #ddd;
 }
 .li-left {
   float: left;
@@ -89,6 +89,6 @@ export default {
 .li-right {
   float: left;
   width: 60%;
-  font-size: 0.5rem;
+  font-size: 0.4rem;
 }
 </style>
