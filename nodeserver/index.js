@@ -22,9 +22,9 @@ app.use(koaBody());
 
 //小程序初始化
 cloud.init({
-    secretId: 'AKIDwh03sRhJbfVAamvTyEKCsITO5XkhcwEI',
-    secretKey: 'xgAPPBk5Azby6yd5JJ5dz6yfBRSDk7F7',
-    env: "release-a38306"
+    secretId: 'AKID4xb2LPaaIkws3ziAO7dvxkHZdR3PvbNv',
+    secretKey: 'SfcNs89wVnpcGhutd8NM6evvgBQPAh1R',
+    env: "lang-yv4or"
 });
 
 

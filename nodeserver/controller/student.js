@@ -2,7 +2,7 @@ const Router = require('koa-router');
 let router=new Router();
 const cloud = require('tcb-admin-node');
 const db=cloud.database({
-    env:"release-a38306"
+    env:"lang-yv4or"
 });
 const testuser=db.collection('test_user');
 // /student/list
