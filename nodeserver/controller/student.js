@@ -2,10 +2,28 @@ const Router = require('koa-router');
 let router=new Router();
 const cloud = require('tcb-admin-node');
 const db=cloud.database({
-    env:"lang-yv4or"
+    env:"release-a38306"
 });
 const testuser=db.collection('test_user');
 // /student/list
+
+router.get("/del", async (ctx, next) => {
+    console.log(ctx.request.body)
+    
+    try{
+        await testuser.where({
+            _id:ctx.request.body.id
+        }).remove()
+    }catch(e){
+        console.error(e)
+    }
+
+    ctx.body = {
+            code: 20000,
+            data: "删除成功"
+        }
+    
+}),
 
 router.get("/list", async (ctx, next) => {
     console.log(ctx.query)
@@ -19,3 +37,5 @@ router.get("/list", async (ctx, next) => {
         }
     
 })
+
+module.exports = router;
