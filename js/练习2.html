@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var x=Math.random();                //赋予两个随机数 三元运算符 比大小
+        // var y=Math.random();
+        // var max=x>y?x:y;
+        // console.log(x,y);
+        // console.log(max);
+        
+        
+        var date=new Date();
+        var year=date.getFullYear();
+        if(year%4==0 && year%100!=0 ||year%400==0){         // 4的倍数且不是100的倍数 或是400的倍数       %整除
+            console.log(year+"是闰年");
+        }else{
+            console.log(year+"是平年");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function foo(){
+        // }
+        // var foo = function(){
+        //   console.log('come');
+        
+        // }
+        // foo()
+
+        // var person = {
+        //   name:"zs",
+        //   age:20,
+        //   eat:function(){                                //隐性函数赋值
+        //     console.log("eat");
+        //   }
+        // }
+        // person.name = "ls";                              // 修改
+        // person.school = "heida"                          // 添加
+        // console.log(person);
+        // person.eat()
+        //引用数据类型  object array function
+        
+        
+
+
+        // var a = 1;
+        // var b = a;
+        // a = 2;                                            //修改无效
+        // console.log(b);
+
+
+        // var obj1 = {
+        //   name:"zs",
+        //   age:20
+        // }
+        // var obj2 = obj1;
+        // obj1.name="ls"                                    //修改有效
+        // console.log(obj2);
+
+
+        // var arr1 = [1,2,3]
+        // var arr2 = arr1;
+        // arr1[1] = "a";                                    //修改有效
+        // console.log(arr2);
+        
+
+        var i = 0;
+        function foo(){
+            console.log(i)
+            ++i;
+            if(i>10){
+                return i
+            }
+            foo();
+        }
+        foo();
+    </script>
+</body>
+</html>
