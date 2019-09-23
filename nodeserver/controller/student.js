@@ -7,7 +7,7 @@ const db=cloud.database({
 const testuser=db.collection('test_user');
 // /student/list
 
-router.get("/del", async (ctx, next) => {
+router.post("/del", async (ctx, next) => {
     console.log(ctx.request.body)
     
     try{
